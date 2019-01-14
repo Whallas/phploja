@@ -1,0 +1,26 @@
+baixar o composer.phar ou composer-setup.exe (windows)
+
+criar o composer.json
+    definir as dependências do projeto
+    require: smarty, phpmailer
+    vendor-dir: diretório dos pacotes de terceiros
+ou
+composer.init
+
+outras diretivas para o composer.json:
+    require-dev: phpunit etc...
+
+
+
+apache - configurar openSSL no projeto (httpd-vhosts.conf)
+
+instalar composer
+C:\xampp\php\php.exe composer.phar install
+composer install
+ou
+C:\xampp\php\php.exe composer.phar update
+composer update
+
+utilizando o smarty:
+criar arquivo .tpl, fazer o template
+no php chamar o smarty, criar suas variaveis e iniciar.
