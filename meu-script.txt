@@ -10,8 +10,6 @@ composer.init
 outras diretivas para o composer.json:
     require-dev: phpunit etc...
 
-
-
 apache - configurar openSSL no projeto (httpd-vhosts.conf)
 
 instalar composer
@@ -24,3 +22,13 @@ composer update
 utilizando o smarty:
 criar arquivo .tpl, fazer o template
 no php chamar o smarty, criar suas variaveis e iniciar.
+
+Model:
+    É onde ficam as classes do projeto, são utilizadas pelo controller
+
+Aqui é feito a reescrista de URL com um apache conf: .htaccess;
+Com ele é possivel obter uma request mais suja utilizando-se uma mais amigável no navegador
+Basta criar o arquivo e não precisa reiniciar o servidor.
+
+Controller:
+    Controla os models e as views.

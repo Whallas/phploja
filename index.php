@@ -8,6 +8,9 @@ require './lib/autoload.php';
 $smarty = new Template();
 // cria variavel
 $smarty->assign('H2', 'Whallas Pimentel Bezerra');
+
+Rotas::getPagina();
+
 // chama o template
 $smarty->display('index.tpl');
 ?>

@@ -1,0 +1,11 @@
+# Premitir a reescria da URL
+<IfModule mod_rewrite.c>
+# Reabilitando a escrita de url
+RewriteEngine on
+# Condição de reescrita de arquivo
+RewriteCond %{REQUEST_FILENAME} !-f
+# Condição de reescrita de pasta
+RewriteCond %{REQUEST_FILENAME} !-d
+# Regra da reescrita (tudo após o ponto), pagina?parametro1
+RewriteRule ^(.*) index.php?pag=$1 [L,QSA]
+</IfModule>
