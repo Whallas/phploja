@@ -27,8 +27,12 @@ Model:
     É onde ficam as classes do projeto, são utilizadas pelo controller
 
 Aqui é feito a reescrista de URL com um apache conf: .htaccess;
-Com ele é possivel obter uma request mais suja utilizando-se uma mais amigável no navegador
+Com ele é possivel obter uma request mais suja utilizando-se uma mais amigável no navegador, junto com isso tem-se a classe Rotas que gerencia os parametros.
 Basta criar o arquivo e não precisa reiniciar o servidor.
+. Criei uma classe Config para parametrizar informações do projeto que são usadas em vários lugares, muito útil para manutenção e por exemplo, mudança de hosts.
 
 Controller:
-    Controla os models e as views.
+    Controla os models e as views. Nesse projeto cada model tem um controller próprio.
+
+View:
+    Basicamente é onde ficam os Templates, que correspondem cada um a um Model e controller, respectivamente, porém nem todos os models tem interface.
